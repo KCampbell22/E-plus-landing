@@ -4,6 +4,10 @@ html{
    background: #F6FAFE;
 }
 
+body, html{
+    overflow-x: hidden;
+}
+
 .wave{
     position: absolute;
     width: 100vw;
@@ -40,7 +44,7 @@ html{
     width: auto;
 }
 .top-cta-text{
-    width: 38ch;
+    max-width: 38ch;
     display: flex;
     flex-direction: column;
 }
@@ -70,7 +74,6 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
     width: 100vw;
     height: 500px;
     z-index: 10;
@@ -78,7 +81,7 @@ html{
 }
 .blue-box{
     padding: 1.5rem;
-    width: 85vw;
+    width: 75vw;
     height: auto;
     background-color: #0076FF;
     border-radius: 35px;
@@ -89,7 +92,7 @@ html{
 }
 
 .featured-items{
-    width: 45%;
+    width: 57%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -117,21 +120,28 @@ font-weight: 500;
 }
 
 .phone{
-    min-height: 330px;
+    position: relative;
+    width: 40%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .phone img{
     position: absolute;
-    bottom: 9rem;
-    right: 7rem;
+    height: 80%;
+    
+    left: 2rem;
     filter: drop-shadow(-5px 10px 13px rgba(0, 0, 0, 4.46));
 }
+
 
 .images{
     max-width: 250px;
 }
 .video-intro {
-    width: 33ch;
+    max-width: 33ch;
     margin: 0 auto;
     font-size: 1.7rem;
 }
@@ -147,8 +157,8 @@ font-weight: 500;
 .video-blurred{
     max-height: 512px;
     min-height: 500px;
-    max-width: 915px;
-    min-width: 800px;
+    max-width: 90%;
+    min-width: 60%;
     background-image: url(/images/victor-freitas-WvDYdXDzkhs-unsplash\ 1.png);
     background-size: cover;
     background-position: center;
@@ -164,14 +174,80 @@ font-weight: 500;
     position: relative;
 }
 
-@media screen and (max-width: 767.98px){
+.container{
+    position: relative;
+    overflow: scroll;
+    
+}
+
+.features{
+    min-width: 0;
+    width: 90%;
+    margin: 0 auto;
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 3rem;
+    overflow-x: scroll;
+}
+
+.feature-card{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 350px;
+    background-color: #FFFF;
+    border-radius: 35px;
+    padding: 15px;
+}
+
+.feature-title{
+    text-align: center;
+}
+
+.learn-more-small:active, .learn-more-small{
+    color: #0076FF;
+    text-decoration: none;
+}
+
+#section-start{
+    width: 500px;
+    border-radius: 35px;
+    padding: 15px;
+}
+
+#features-header{
+    font-size: 1.5rem;
+    text-align: left;
+    width: 15ch;
+}
+
+.features-description{
+    font-size: 1rem;
+    text-align: left;
+    width: 27ch;
+}
+
+.download-section{
+    background-image: url(/images/Rectangle.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100vw;
+    margin-top: 2rem;
+}
+@media screen and (max-width: 768.97px){
     .images{
         max-width: 140px;
     }
     .blue-box{
         height: 300px;
         width: 90vw;
-        top: 15rem;
+        top:0;
         position: relative;
     }
     .featured-items{
@@ -188,10 +264,37 @@ font-weight: 500;
         width: 18ch;
         margin-top: 3rem;
     }
-    .phone img{
-        bottom: 18rem;
-        left: 1.5rem;
-        height: 300px;
+    .phone{
+        display: none;
+        
+    }
+    .features{
+        min-width: 1500px;
+        margin-left: 2rem;
+    }
+    .features::-webkit-scrollbar{
+        background-color: transparent;
+    }
+    .video-blurred{
+        height: auto;
+        width: 290px;
+        top: 0;
+        position: relative;
+        aspect-ratio: 1 / 1;
     }
     
+}
+
+
+
+@media screen and (max-width: 662px) {
+    .phone{
+        display: none;
+    }
+    .blue-box{
+        top: 0;
+    }
+    .video-intro{
+        width: 17ch;
+    }
 }
