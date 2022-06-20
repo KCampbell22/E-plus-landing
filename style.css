@@ -1,0 +1,197 @@
+html{
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+   background: #F6FAFE;
+}
+
+.wave{
+    position: absolute;
+    width: 100vw;
+    height: 750px;
+    top: 0;
+}
+.slogan{
+    font-size: 60px;
+    width: 15ch;
+    font-weight: 800;
+    z-index: 10;
+    display: inline-block;
+}
+.blue-text{
+    color: #0076FF;
+}
+
+.hero{
+    position: relative;
+}
+.gray-bg{
+    display: absolute;
+}
+
+.hero-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+}
+
+.flex-col{
+    width: auto;
+}
+.top-cta-text{
+    width: 38ch;
+    display: flex;
+    flex-direction: column;
+}
+
+.cta {
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.learn-more:active, .learn-more{
+    color: #0076FF;
+    text-decoration: none;
+}
+
+.start{
+    height: 35px;
+    width: 120px;
+    background-color: #0076FF;
+    color: white;
+    border: none;
+    border-radius: 35px;
+}
+
+.featured{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100vw;
+    height: 500px;
+    z-index: 10;
+    position: relative;
+}
+.blue-box{
+    padding: 1.5rem;
+    width: 85vw;
+    height: auto;
+    background-color: #0076FF;
+    border-radius: 35px;
+    max-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.featured-items{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    height: 100%;
+    position: relative;
+    left: 3rem;
+    gap: 15px;
+}
+
+.runners{
+    position: relative;
+    left: -1.7rem;
+}
+
+.feature-text{
+color: white;
+font-family: 'Inter', sans-serif;
+width: 100%;
+margin-bottom: 2rem;
+font-size: 1.3rem;
+font-weight: 500;
+
+}
+
+.phone{
+    min-height: 330px;
+}
+
+.phone img{
+    position: absolute;
+    bottom: 9rem;
+    right: 7rem;
+    filter: drop-shadow(-5px 10px 13px rgba(0, 0, 0, 4.46));
+}
+
+.images{
+    max-width: 250px;
+}
+.video-intro {
+    width: 33ch;
+    margin: 0 auto;
+    font-size: 1.7rem;
+}
+
+.video-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.video-blurred{
+    max-height: 512px;
+    min-height: 500px;
+    max-width: 915px;
+    min-width: 800px;
+    background-image: url(/images/victor-freitas-WvDYdXDzkhs-unsplash\ 1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 35px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-blurred img{
+    position: relative;
+}
+
+@media screen and (max-width: 767.98px){
+    .images{
+        max-width: 140px;
+    }
+    .blue-box{
+        height: 300px;
+        width: 90vw;
+        top: 15rem;
+        position: relative;
+    }
+    .featured-items{
+        height: 80%;
+        width: 100%;
+    }
+    .hero-flex{
+        flex-direction: column;
+        position: relative;
+        top: 3rem;
+    }
+    .slogan{
+        font-size: 33px;
+        width: 18ch;
+        margin-top: 3rem;
+    }
+    .phone img{
+        bottom: 18rem;
+        left: 1.5rem;
+        height: 300px;
+    }
+    
+}

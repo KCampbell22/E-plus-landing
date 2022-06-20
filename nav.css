@@ -1,0 +1,155 @@
+.nav-bar{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+}
+
+.nav-links{
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+
+.logo{
+    color: #0076FF;
+    text-decoration: none;
+    margin-left: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo:active{
+    color: #0076FF;
+}
+
+.nav-items{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+
+.m-nav-items, .mobile-items, .mobile-nav, .hamburger, .line{
+    display: none;
+}
+
+.nav-items a:active{
+color: #000;
+}
+
+.nav-items:hover{
+    text-underline-offset: 5px;
+    text-decoration: solid underline #0076FF;
+}
+
+#download{
+    background-color: #0076FF;
+    height: 42px;
+    width: 190px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.46);
+    border-radius: 35px;
+    color: white;
+}
+
+.hamburger{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer; 
+    margin-top: .5rem;
+    margin-left: .5rem;
+}
+
+
+
+.line{
+    width: 30px;
+    height: 3px;
+    background-color: #0076FF;
+    margin: 1px;
+}
+
+
+
+@media screen and (max-width: 768.98px){
+
+    .m-nav-items, .nav-items{
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    }
+    
+    .nav-links{
+        display: none;
+    }
+    .mobile-nav{
+        width: 25%;
+        height: auto;
+        
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        top: -1rem;
+        gap: 10px;
+        left: 0;
+        padding: 11px;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        position: absolute;
+        background-color: rgba(142, 142, 142, 0.72);
+        z-index: 11
+    }
+    .logo{
+        margin-left: auto;
+        margin-right: 2rem;
+        ;
+    }
+
+    .hamburger{
+        display: flex;
+        position: absolute;
+        cursor: pointer;
+    }
+    .line{
+        display: block;
+        z-index: 12;
+        position: relative;
+    }
+    #download{
+        width: auto;
+        font-size: .8rem;
+        height: 30px;
+        padding: 10px;
+        text-align: center;
+        
+    }
+
+}
+
+@media screen and (max-width: 575.98px){
+    #download{
+        width: auto;
+        font-size: .5rem;
+    }
+}
+.show{
+    display: flex !important;
+}
