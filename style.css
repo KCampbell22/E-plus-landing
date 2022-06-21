@@ -239,6 +239,79 @@ font-weight: 500;
     height: 500px;
     width: 100vw;
     margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+.phone-display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+}
+.text-section{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-left: auto;
+}
+
+.text-section h3{
+    font-size: 2.1rem;
+    width: 25ch;
+    font-weight: 700;
+}
+
+.app-reviews{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.what-is-said{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 3rem;
+}
+
+.what-is-said h3{
+    margin-left: 4rem;
+    margin-top: 3rem;
+    align-self: flex-start;
+}
+
+.review{
+    width: 25%;
+    background-color: white;
+    min-height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-radius: 35px;
+    box-shadow: 5px 1px 6px rgb(0 0 0 / 34%);}
+
+.review h4{
+    max-width: 34ch;
+    min-width: 10ch;
+    
+}
+
+.review p{
+    align-self: flex-start;
+    margin-left: 2rem;
 }
 @media screen and (max-width: 768.97px){
     .images{
@@ -282,6 +355,30 @@ font-weight: 500;
         position: relative;
         aspect-ratio: 1 / 1;
     }
+    .download-section{
+        flex-direction: column;
+    }
+    .text-section{
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+    }
+    .text-section h3{
+        font-size: 1.7rem;
+        width: 30ch;
+        text-align: center;
+
+    }
+    .text-section img{
+        width: 300px;
+    }
+    .phone-display img{
+        width: 150px;
+    }
+    .phone-display{
+        width: 100%;
+        margin: 0 auto;
+    }
     
 }
 
@@ -297,4 +394,28 @@ font-weight: 500;
     .video-intro{
         width: 17ch;
     }
+    .app-reviews{
+        flex-direction: column;
+    }
+    .review{
+        width: 60%;
+    }
+    .join{
+        width: 33ch;
+    }
+    .video-blurred{
+        max-width: 300px;
+        min-height: 300px;
+    }
 }
+
+@media screen and (max-width: 470px) {
+    .phone-display img{
+        width: 120px;
+    }
+    .what-is-said h3{
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+}
+
