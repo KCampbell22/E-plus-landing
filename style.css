@@ -243,7 +243,7 @@ font-weight: 500;
     align-items: center;
     justify-content: space-evenly;
     margin: 0 auto;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 .phone-display{
     display: flex;
